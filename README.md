@@ -26,12 +26,12 @@ Angle Computation:
 compute_accel_inclination_angle: Computes inclination angles (pitch and roll) from accelerometer data.
 **ComputeSegmentedAngle**: Combines gyroscope and accelerometer data using a complementary filter to compute final angles (roll, pitch, and yaw) for different segments of the data.
 
-Mocap Functions:
+**Mocap Functions:**
 
 **landings, flight**: Detect foot strike and takeoff events based on vertical ground reaction force (vGRF) data.
 **trimlandings, trimFlights:** Trim the detected landing and flight indices to ensure consistency in start and end points.
 
-IMU Data Handling:
+**IMU Data Handling:**
 
 Data from IMUs placed on the shank and foot is loaded, resampled, and aligned using functions like Resample_accelerometer and align_imu_signals.
 The script then uses the aligned data to detect jumps, focusing on takeoff and landing phases.
